@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/pages/*"],
+      "@global/*": ["src/global/*"],
+      "@library/*": ["src/library/*"],
+      "@swiper/*": ["node_modules/swiper/*"]
+    }
+  }
+}

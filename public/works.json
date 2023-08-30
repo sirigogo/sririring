@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "dataId": 1,
+      "title": "프론트엔드 메인프로젝트",
+      "date": "2023.06.28 ~ 2023.07.2",
+      "text": "react, Typescript를 이용하여 백엔드와 협업하여 영화를 즐기고 리뷰하는 프로젝트를 개발하였습니다.",
+      "img": "/assets/img/works/1.png",
+      "link": "https://shorthaired-dedication-24e.notion.site/395bf02c31b641839535d63bf4379825"
+    },
+    {
+      "dataId": 2,
+      "title": "스택오버플로우 클론코딩",
+      "date": "2023.06.16 ~ 2023.06.27",
+      "text": "react, javascript를 이용하여 백엔드와 협업하여 스택오버플로우와 동일한 기능을 하는 프로젝트를 구현하였습니다.",
+      "img": "/assets/img/works/2.png",
+      "link": "https://github.com/sirigogo/seb44_pre_018"
+    },
+    {
+      "dataId": 3,
+      "title": "가톨릭대학교 류마티스연구센터",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/rhrcnew.jpg",
+      "link": "http://rhrc.co.kr/"
+    },
+    {
+      "dataId": 4,
+      "title": "가톨릭대학교 중개면역센터",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/rhrcnew2.png",
+      "link": "http://rhrcnew2.egreef.kr/"
+    },
+    {
+      "dataId": 5,
+      "title": "DPJ & Partners",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/dpj.PNG",
+      "link": "http://www.dpj-partners.com/"
+    },
+    {
+      "dataId": 6,
+      "title": "바른푸드",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/foodzone.jpg",
+      "link": "https://barunfood.co.kr/sub/index.php"
+    },
+    {
+      "dataId": 7,
+      "title": "바이가미",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/bygami.png",
+      "link": "https://www.bygami.com/sub/index.php"
+    },
+    {
+      "dataId": 8,
+      "title": "서울행정사무소",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/seoullawstock.png",
+      "link": "http://law-stock.com/sub/index.php"
+    },
+    {
+      "dataId": 9,
+      "title": "오에이치스토리",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/ohstory.jpg",
+      "link": "http://ohstory.egreef.kr/sub/index.php"
+    },
+    {
+      "dataId": 10,
+      "title": "인천영화주간",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/ifwk.jpg",
+      "link": "http://ifwk.co.kr"
+    },
+    {
+      "dataId": 11,
+      "title": "지힐링스퀘어의원",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/ghealingsquare.jpg",
+      "link": "http://ghealingsquare.egreef.kr/sub/index.php"
+    },
+    {
+      "dataId": 12,
+      "title": "하이오커피",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/hio.png",
+      "link": "http://hiocoffee.com/"
+    },
+    {
+      "dataId": 13,
+      "title": "현일랩메이트",
+      "date": null,
+      "text": "php를 기반으로 html, css, javascript를 이용하여 제작하였습니다.",
+      "img": "/assets/img/works/lab-mate.png",
+      "link": "https://lab-mate.com/"
+    }
+  ]
+}
