@@ -15,7 +15,7 @@ const Contact = () => {
         </li>
         <li>010.2014.0406</li>
       </ul>
-      <ol>
+      <ol className="snsLink">
         <li>
           <a href="https://github.com/sirigogo" target="_blank">
             <img
@@ -68,33 +68,7 @@ const ContactWrap = styled.div`
       }
     }
   }
-  ol {
-    display: flex;
-    align-items: center;
-    li {
-      margin-left: 20px;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      border: 2px solid #818091;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s;
-      img {
-        width: 20px;
-        filter: invert(1);
-        opacity: 0.6;
-        transition: all 0.3s;
-      }
-      &:hover {
-        border: 2px solid #fff;
-        img {
-          opacity: 1;
-        }
-      }
-    }
-  }
+
   @media (max-width: 1400px) {
     h2 {
       font-size: 35px;

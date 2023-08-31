@@ -114,19 +114,19 @@ const StartWrap = styled.div`
     padding: 0 20px;
     span {
       &.spanTxt {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
     strong {
       &.strongTxt {
-        font-size: 30px;
+        font-size: 21px;
       }
     }
     h1 {
       &.h1Txt {
-        font-size: 33px;
-        margin: 30px 0 30px;
-        line-height: 50px;
+        font-size: 22px;
+        margin: 15px 0 20px;
+        line-height: 30px;
         word-break: keep-all;
       }
     }

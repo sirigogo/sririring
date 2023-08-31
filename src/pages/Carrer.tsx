@@ -26,17 +26,19 @@ const Carrer = () => {
           date: "2020.12 ~ 2022.12",
           title: "바이브리스",
           major: "웹퍼블리셔",
-          text: `php를 기반으로 html, css, javascript를 이용하여 다양한 기업의
-          홈페이지를 제작해왔습니다. 이 기간동안 50여개의 프로젝트를
-          수행하며 웹 디자인과 기술에 대한 폭넓은 경험을 쌓아왔습니다.`,
+          text: `- php 기반 html, css, javascript를 이용해 홈페이지 제작
+          - 다양한 기업의 홈페이지 50여개 제작
+          - 디자이너, 백엔드 개발자와 협업하여 프로젝트 진행
+          - 고객 요구사항을 분석하여 효과적인 사용자 경험과 디자인을 구현
+          - 고객 소통 및 응대`,
         },
         {
           date: "2015.02 ~ 2019.03",
           title: "(사)사회적책임경영품질원",
           major: "기획팀 연구원",
-          text: `기획팀에서 활동하면서 컨벤션 및 이사회, 정기총회를 기획하고
-          성공적으로 진행하여 다양한 인적 네트워크를 형성했습니다. 이를
-          통해 뛰어난 기획력과 소통능력을 갖추게 되었습니다.`,
+          text: `- 기획팀에서 활동하면서 다양한 컨벤션 및 이사회, 정기총회를 기획 
+          - 행사 진행 및 관리
+          - 고객 소통 및 응대`,
         },
       ],
     },
@@ -48,23 +50,27 @@ const Carrer = () => {
           date: "2023.02 ~ 2023.08",
           title: "코드스테이츠",
           major: "웹프론트엔드 과정",
-          text: `Javascript, Typescript 등 객체지향언어 학습을 진행하며, 백엔드와 협업하여 리액트를 이용한 프로젝트를 2개 완성하였습니다.`,
+          text: `- Javascript, Typescript 등 객체지향언어 학습
+          - AWS S3 배포
+          - 백엔드 협업 프로젝트 2회 경험
+          - 그룹회고 및 활동 모더레이터`,
         },
         {
           date: "2020.06 ~ 2020.12",
           title: "인컴트랜드",
           major: "스마트웹&콘텐츠개발 과정",
-          text: `다양한 스마트기기 플랫폼에 적용가능한 웹기반의 콘텐츠서비스를
-        기획, 분석, 설계, 구현 테스트, 배포 및 유지보수하는 학습을
-        진행했습니다.`,
+          text: `- html, css, javascript 학습
+        - 프로젝트 3회 수행
+        - 일러스트 및 포토샵으로 디자인 작업 학습
+        - 다양한 배포 실습 및 유지복수 학습`,
         },
         {
           date: "2013.03 ~ 2015.03",
           title: "유한대학교",
-          major: "컴퓨터공학과",
-          text: `다양한 스마트기기 플랫폼에 적용가능한 웹기반의 콘텐츠서비스를
-        기획, 분석, 설계, 구현 테스트, 배포 및 유지보수하는 학습을
-        진행했습니다.`,
+          major: "컴퓨터공학과 졸업",
+          text: `- 컴퓨터 공학 전공으로 학문적 기반을 다지며, 웹 개발 학습
+          - 관련 이수 과목을 통해 데이터베이스, 웹 프로그래밍, 소프트웨어 공학 등 다양한 분야에서 지식과 기술을 습득
+          - 웹 개발 영역에서의 다양한 역량을 확보`,
         },
       ],
     },
@@ -107,7 +113,14 @@ const Carrer = () => {
                     <span>{listItem.date}</span>
                     <h5>{listItem.title}</h5>
                     <p>{listItem.major}</p>
-                    <p className="carrerTxt">{listItem.text}</p>
+                    <p className="carrerTxt">
+                      {listItem.text.split("\n").map((line) => (
+                        <>
+                          {line}
+                          <br />
+                        </>
+                      ))}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -189,6 +202,9 @@ const CarrerWrap = styled.div`
       height: 400px;
       transition: all 0.3s;
       margin: 0 20px;
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: min-content;
       span {
         font-size: 16px;
         color: #818091;
@@ -199,13 +215,15 @@ const CarrerWrap = styled.div`
         font-weight: 600;
       }
       p {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
-        line-height: 25px;
+        line-height: 28px;
         word-break: keep-all;
         &:last-child {
           margin-bottom: 0;
-          font-size: 16px;
+          font-size: 18px;
+          line-height: 30px;
+          word-break: keep-all;
           color: #818091;
         }
       }
@@ -268,8 +286,9 @@ const CarrerWrap = styled.div`
   @media (max-width: 500px) {
     padding: 0 20px;
     .inner {
-      margin-top: 60px;
+      margin-top: 30px;
       ul {
+        margin-bottom: 10px;
         li {
           width: 170px;
           height: 48px;
@@ -279,21 +298,22 @@ const CarrerWrap = styled.div`
         flex-direction: column;
       }
       .tabItem {
-        padding: 25px 20px;
-        margin: 15px 0;
+        padding: 15px 10px;
+        margin: 10px 0;
         height: auto;
         span {
-          font-size: 15px;
+          font-size: 12px;
         }
         h5 {
-          font-size: 20px;
-          margin: 15px 0 8px;
+          font-size: 17px;
+          margin: 10px 0 8px;
         }
         p {
-          font-size: 14px;
-          margin-bottom: 15px;
+          font-size: 12px;
+          margin-bottom: 10px;
           &:last-child {
-            font-size: 14px;
+            font-size: 11px;
+            line-height: 24px;
           }
         }
       }

@@ -246,17 +246,17 @@ const SkillWrap = styled.div`
   }
   @media (max-width: 500px) {
     ul {
-      margin-top: 30px;
-      gap: 40px;
+      margin-top: 20px;
+      gap: 20px;
       grid-template-columns: repeat(2, 1fr);
       li {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         div {
-          width: 100px;
-          height: 100px;
+          width: 8%;
+          height: 80px;
           img {
-            height: 60px;
+            height: 50px;
           }
         }
       }

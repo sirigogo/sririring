@@ -162,6 +162,8 @@ const HeaderWrap = styled.div`
         border: 1px solid #414051;
         display: block;
         transform: rotate(45deg);
+        font-size: 0;
+        line-height: 0;
         &.active {
           border: 1px solid #fff;
           box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.8);

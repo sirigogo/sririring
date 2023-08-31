@@ -15,6 +15,10 @@ const Works = () => {
     spaceBetween: 35,
     slidesPerView: 4,
     breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
       500: {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -28,7 +32,7 @@ const Works = () => {
         spaceBetween: 30,
       },
       1300: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 35,
       },
     },

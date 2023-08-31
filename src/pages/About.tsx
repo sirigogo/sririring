@@ -1,8 +1,12 @@
 import { styled } from "styled-components";
 
-const About = () => {
+interface AboutProps {
+  isActive: boolean;
+}
+
+const About = ({ isActive }: AboutProps) => {
   return (
-    <AboutWrap>
+    <AboutWrap className={`About ${isActive ? "active" : ""}`}>
       <h4 className="sectionTitle">
         <img
           src={process.env.PUBLIC_URL + "/assets/img/titleIco.png"}
@@ -18,7 +22,7 @@ const About = () => {
       </div>
       <p>
         <span>안녕하세요 :)</span>
-        <span>
+        {/* <span>
           웹프론트엔드 개발자 장근실입니다. <br />
           UI 디자인에 큰 관심을 가지고 있으며, 사용자 경험을 향상시키기 위해
           노력하고 있습니다.
@@ -32,8 +36,33 @@ const About = () => {
         </span>
         <span>
           아직 길지 않은 경력이지만, 잘 할 수 있다는 확신과 열정이 있습니다.
-        </span>
+        </span> */}
       </p>
+      <div className="textWrap">
+        <p># 사용자의 빠른 동선 관련 UI 디자인에 관심이 높은</p>
+        <p># 문제 해결에 있어 긍정적인 의사소통과 건강한 행동을 유지하는</p>
+        <p># 화려하고 매력적인 홈페이지 구현을 즐기는</p>
+        <p># 현실적이고, 혁신적인 웹 어플리케이션을 제작하고 싶은</p>
+        <p># UI/UX 이해도가 높은 프론트엔드 개발자</p>
+      </div>
+      <ol className="snsLink">
+        <li>
+          <a href="https://github.com/sirigogo" target="_blank">
+            <img
+              src={process.env.PUBLIC_URL + "/assets/img/icoGit.png"}
+              alt="깃 아이콘"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://sirigogo.tistory.com/" target="_blank">
+            <img
+              src={process.env.PUBLIC_URL + "/assets/img/icoBlog.png"}
+              alt="블로그 아이콘"
+            />
+          </a>
+        </li>
+      </ol>
     </AboutWrap>
   );
 };
@@ -41,9 +70,9 @@ const About = () => {
 const AboutWrap = styled.div`
   text-align: center;
   .imgWrap {
-    margin: 100px auto 50px;
-    width: 350px;
-    height: 350px;
+    margin: 70px auto 50px;
+    width: 300px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     border-radius: 100%;
@@ -66,6 +95,53 @@ const AboutWrap = styled.div`
       }
     }
   }
+  .textWrap {
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 20px;
+      line-height: 40px;
+      transition: all 0.3s;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .snsLink {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &.active {
+    .textWrap {
+      p {
+        animation: fadein 1s ease-in-out;
+        &:nth-of-type(2) {
+          animation: fadein 2s ease-in-out;
+        }
+        &:nth-of-type(3) {
+          animation: fadein 3s ease-in-out;
+        }
+        &:nth-of-type(4) {
+          animation: fadein 4s ease-in-out;
+        }
+        &:nth-of-type(5) {
+          animation: fadein 5s ease-in-out;
+        }
+      }
+    }
+    .snsLink {
+      animation: fadein 6s ease-in-out;
+    }
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
   @media (max-width: 1400px) {
     .imgWrap {
       margin: 90px auto 40px;
@@ -85,7 +161,7 @@ const AboutWrap = styled.div`
   }
   @media (max-width: 950px) {
     .imgWrap {
-      margin: 80px auto 40px;
+      margin: 70px auto 40px;
       width: 300px;
       height: 300px;
     }
@@ -99,12 +175,18 @@ const AboutWrap = styled.div`
         }
       }
     }
+    .textWrap {
+      p {
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
   }
   @media (max-width: 500px) {
     .imgWrap {
-      margin: 60px auto 40px;
-      width: 280px;
-      height: 280px;
+      margin: 30px auto 30px;
+      width: 200px;
+      height: 200px;
     }
     p {
       padding: 0 25px;
@@ -115,6 +197,13 @@ const AboutWrap = styled.div`
         &:first-child {
           font-size: 20px;
         }
+      }
+    }
+    .textWrap {
+      p {
+        word-break: keep-all;
+        font-size: 15px;
+        line-height: 30px;
       }
     }
   }

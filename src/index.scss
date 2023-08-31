@@ -92,11 +92,38 @@
   bottom: 5px;
 }
 
+.snsLink {
+  display: flex;
+  align-items: center;
+  li {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #818091;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    img {
+      width: 20px;
+      filter: invert(1);
+      opacity: 0.6;
+      transition: all 0.3s;
+    }
+    &:hover {
+      border: 2px solid #fff;
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
 @media (max-width: 1400px) {
   .Section .sectionTitle {
     font-size: 46px;
   }
-  .Section.active > div > .sectionTitle img {
+  .Section > div > .sectionTitle img {
     width: 90px;
   }
   .Section .sectionTitle p {
@@ -108,7 +135,7 @@
   .Section .sectionTitle {
     font-size: 40px;
   }
-  .Section.active > div > .sectionTitle img {
+  .Section > div > .sectionTitle img {
     width: 85px;
   }
   .Section .sectionTitle p {
@@ -126,12 +153,13 @@
 
 @media (max-width: 500px) {
   .Section .sectionTitle {
-    font-size: 32px;
+    font-size: 24px;
   }
-  .Section.active > div > .sectionTitle img {
-    width: 75px;
+
+  .Section > div > .sectionTitle img {
+    width: 55px;
   }
   .Section .sectionTitle p {
-    margin-left: -40px;
+    margin-left: -35px;
   }
 }
