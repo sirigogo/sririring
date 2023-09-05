@@ -119,6 +119,12 @@
     }
   }
 }
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
 @media (max-width: 1400px) {
   .Section .sectionTitle {
     font-size: 46px;
